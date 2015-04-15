@@ -66,6 +66,8 @@
         slideLicenseScrollView.delegate = self;
         slideLicenseScrollView.titleColor = _titleColor;
         slideLicenseScrollView.textColor = _textColor;
+        slideLicenseScrollView.titleFont = _titleFont;
+        slideLicenseScrollView.textFont = _textFont;
         _scrolView = slideLicenseScrollView;
         [self.view addSubview:slideLicenseScrollView];
     } else {
