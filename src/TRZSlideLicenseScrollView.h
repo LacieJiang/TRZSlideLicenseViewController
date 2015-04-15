@@ -12,6 +12,8 @@
 
 @property (nonatomic) UIColor *titleColor;
 @property (nonatomic) UIColor *textColor;
+@property (nonatomic) UIFont *titleFont;
+@property (nonatomic) UIFont *textFont;
 
 - (id)initWithFrame:(CGRect)frame licenses:(NSArray*)licenses;
 

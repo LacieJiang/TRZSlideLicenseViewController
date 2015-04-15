@@ -79,4 +79,29 @@
     }
 }
 
+- (void)setTitleFont:(UIFont *)titleFont
+{
+  if (titleFont != _titleFont) {
+    _titleFont = titleFont;
+
+    // Update the font of all
+    for (TRZLicenseView *licenseView in self.licenseViews) {
+      licenseView.libTitle.font = _titleFont;
+    }
+  }
+}
+
+- (void)setTextFont:(UIFont *)textFont
+{
+  if (textFont != _textFont) {
+    _textFont = textFont;
+
+    // Update the font of all
+    for (TRZLicenseView *licenseView in self.licenseViews) {
+      licenseView.libText.font = _textFont;
+      licenseView.curPage.font = _textFont;
+    }
+  }
+}
+
 @end

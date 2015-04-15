@@ -174,4 +174,24 @@
     }
 }
 
+- (void)setTitleFont:(UIFont *)titleFont
+{
+  if (titleFont != _titleFont) {
+    _titleFont = titleFont;
+
+    // Update title font of scrollview.
+    self.scrolView.titleFont = _titleFont;
+  }
+}
+
+- (void)setTextFont:(UIFont *)textFont
+{
+  if (textFont != _textFont) {
+    _textFont = textFont;
+
+    // Update text font of scrollview.
+    self.scrolView.textFont = _textFont;
+  }
+}
+
 @end
